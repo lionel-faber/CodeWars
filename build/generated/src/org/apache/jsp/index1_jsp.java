@@ -83,13 +83,14 @@ public final class index1_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\n");
       out.write("<body>\n");
       out.write("    <div id =\"header\">\n");
-      out.write("        <div id=\"logo\">\n");
+      out.write("        <!--div id=\"logo\">\n");
       out.write("            ");
       out.write("\n");
-      out.write("        </div>\n");
-      out.write("        <h1>\n");
+      out.write("        </div-->\n");
+      out.write("        <h1><center>\n");
       out.write("            Code Wars Prelims\n");
-      out.write("        </h1>\n");
+      out.write("        </center></h1>\n");
+      out.write("\n");
       out.write("    </div>\n");
       out.write("    ");
       if (_jspx_meth_sql_setDataSource_0(_jspx_page_context))
@@ -109,7 +110,7 @@ public final class index1_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("               <b>Phone Number:</b><input type=\"text\" name=\"phone_no\">\n");
       out.write("            </div>\n");
       out.write("         </div>\n");
-      out.write("         <span id=\"ms_timer\" style=\"display: \"></span>\n");
+      out.write("         <span id=\"ms_timer\"></span>\n");
       out.write("         <script>\n");
       out.write("\t\t$(function(){\n");
       out.write("\t\t\t\t\t  $('#ms_timer').countdowntimer({\n");

@@ -16,12 +16,13 @@
 </head>
 <body>
     <div id ="header">
-        <div id="logo">
+        <!--div id="logo">
             <%-- Add logo here --%>
-        </div>
-        <h1>
+        </div-->
+        <h1><center>
             Code Wars Prelims
-        </h1>
+        </center></h1>
+
     </div>
     <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
     url="jdbc:mysql://localhost:3306/quiz"
@@ -37,9 +38,9 @@
             <br>
             <div id="form2">
                <b>Phone Number:</b><input type="text" name="phone_no">
-            </div>
+            </div>  
          </div>
-         <span id="ms_timer" style="display: "></span>
+         <span id="ms_timer"></span>
          <script>
 		$(function(){
 					  $('#ms_timer').countdowntimer({
@@ -61,8 +62,8 @@
         <c:forEach var="row" items="${result.rows}">
         <br>
             <font size="4">
-            <pre><b><c:out value="${row.q_data}"/>
-            </b></pre>
+            <b><pre><c:out value="${row.q_data}"/>
+                </pre></b>
             </font><br>
             <input type="radio" name="group${row.q_no}" value="e" checked="checked" style="display: none">
             <input type="radio" name="answ${row.q_no}" value="${row.crct_optn}" checked="checked" style="display: none">
