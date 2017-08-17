@@ -35,9 +35,9 @@ public class servlet1 extends HttpServlet {
             throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
         try{
-           String url="jdbc:mysql://localhost:3306/quiz";
+           String url="jdbc:mysql://192.168.0.7:3306/codewars?user=root&password=lionelfaber";
            Class.forName("com.mysql.jdbc.Driver");
-           connect = DriverManager.getConnection(url,"root","password");
+           connect = DriverManager.getConnection(url,"root","lionelfaber");
            message = "Thank you for your participation!";
         }
         catch (ClassNotFoundException cnfe)
